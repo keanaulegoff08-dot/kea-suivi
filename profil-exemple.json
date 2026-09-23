@@ -1,0 +1,41 @@
+{
+  "_lisezmoi": "Modèle de fichier profil. Duplique-le, remplace les valeurs par les tiennes, puis importe-le depuis l'app (Stats → Importer, ou le bouton du premier lancement). Ce fichier ne contient que des paramètres : il n'écrase ni tes check-ins ni tes dépenses si tu pars d'une app vide.",
+  "v": 1,
+  "cfg": {
+    "name": "Prénom",
+    "payday": 28,
+    "firstPayday": null,
+    "income": { "salaire": 0, "caf": 0 },
+    "savingsTarget": 0,
+    "fixed": [
+      { "k": "loyer", "n": "Loyer", "v": 0, "day": 1, "src": "" },
+      { "k": "tel", "n": "Forfait mobile", "v": 0, "day": 2, "src": "" },
+      { "k": "transport", "n": "Abonnement transport", "v": 0, "day": 1, "src": "" },
+      { "k": "banque", "n": "Frais bancaires", "v": 0, "day": 1, "src": "", "found": true }
+    ],
+    "baseline": {
+      "buy":     { "avg": 0, "ex": "ce que tes achats non prévus t'ont coûté par mois" },
+      "sorties": { "avg": 0, "ex": "bars, billetterie, soirées" },
+      "junk":    { "avg": 0, "ex": "livraison et fast-food" },
+      "vtc":     { "avg": 0, "ex": "VTC et taxis, surtout après 1 h du matin" },
+      "weed":    { "avg": 0, "ex": "buraliste + retraits d'espèces" },
+      "porn":    { "avg": 0, "ex": "abonnements et achats de contenus" }
+    },
+    "envelopes": [
+      { "k": "courses",   "n": "Courses & repas", "v": 0, "cats": ["courses", "malbouffe"] },
+      { "k": "social",    "n": "Vie sociale",     "v": 0, "cats": ["sortie", "vtc"] },
+      { "k": "sport",     "n": "Sport & santé",   "v": 0, "cats": ["sport"] },
+      { "k": "projet",    "n": "Projet & admin",  "v": 0, "cats": ["memoire"] },
+      { "k": "sante",     "n": "Santé & hygiène", "v": 0, "cats": ["sante"] },
+      { "k": "transport", "n": "Transport",       "v": 0, "cats": ["transport"] },
+      { "k": "imprevu",   "n": "Imprévus",        "v": 0, "cats": ["autre"] },
+      { "k": "rouge",     "n": "Zone rouge",      "v": 0, "cats": ["weed", "porno", "achat"], "red": true }
+    ],
+    "goals": {
+      "projet": { "n": "Avancer sur mon projet", "target": 35 },
+      "weed":   { "n": "Arrêter la weed", "target": 30 }
+    }
+  },
+  "balance": { "amount": 0, "at": null, "pending": 0, "pendingDeducted": true },
+  "checkins": {}, "expenses": [], "savings": [], "sos": [], "missions": {}, "goals": {}, "paid": {}
+}

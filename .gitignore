@@ -1,0 +1,5 @@
+# sauvegardes et profils personnels — ne jamais commiter
+cap-*.json
+mon-profil.json
+profil.json
+.DS_Store
